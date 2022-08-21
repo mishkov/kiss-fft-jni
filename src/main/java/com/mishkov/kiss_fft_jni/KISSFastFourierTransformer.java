@@ -1,4 +1,4 @@
-package com.mishkov.kiss.fft.jni;
+package com.mishkov.kiss_fft_jni;
 
 import org.apache.commons.math3.complex.Complex;
 import org.apache.commons.math3.transform.TransformType;
