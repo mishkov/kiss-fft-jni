@@ -1,5 +1,21 @@
 apply plugin: 'com.android.library'
 
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+}
+
 android {
     compileSdkVersion 30
     defaultConfig {
