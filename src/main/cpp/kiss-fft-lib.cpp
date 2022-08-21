@@ -1,7 +1,7 @@
 #include <jni.h>
 #include <android/log.h>
-#include "../../../../kiss_fft.h"
-#include "../../../../kiss_fftr.h"
+#include "kiss_fft.h"
+#include "kiss_fftr.h"
 
 extern "C" {
 
