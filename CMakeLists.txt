@@ -5,6 +5,8 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 
+project(kiss-fft-jni)
+
 # by default we have double precision but just to be sure!
 add_definitions(-Dkiss_fft_scalar=double)
 
