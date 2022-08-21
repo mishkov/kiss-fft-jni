@@ -1,2 +1,7 @@
+# auto-generated files
+.cxx
+.gradle
 /build
+
+# required by "gradle build" config
 local.properties
