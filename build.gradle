@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 buildscript {
-    
     repositories {
         google()
         mavenCentral()
@@ -9,6 +9,26 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.2.2'
     }
+}
+
+publishing {
+  publications {
+    release(MavenPublication) {
+      groupId = 'com.android.library'
+      artifactId = 'kiss-fft-jni'
+      version = '0.0.5'
+
+      afterEvaluate {
+        from components.release
+      }
+    }
+  }
+  repositories {
+    maven {
+      name = 'mishkovsrepo'
+      url = "${project.buildDir}/repo"
+    }
+  }
 }
 
 repositories {
@@ -42,6 +62,11 @@ android {
             path "CMakeLists.txt"
         }
     }
+    publishing {
+    singleVariant('release') {
+        withSourcesJar()
+    }
+  }
 }
 
 dependencies {
