@@ -5,3 +5,6 @@
 
 # required by "gradle build" config
 local.properties
+
+# VSCode files
+.vscode/
