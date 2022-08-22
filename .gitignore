@@ -11,3 +11,6 @@ local.properties
 
 # Ignore Gradle build output directory
 build
+
+# Android Studio files
+.idea
