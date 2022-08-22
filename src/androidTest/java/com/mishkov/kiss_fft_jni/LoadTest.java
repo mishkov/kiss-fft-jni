@@ -1,4 +1,4 @@
-package uk.me.berndporr.kiss_fft;
+package com.mishkov.kiss_fft_jni;
 
 import android.support.test.runner.AndroidJUnit4;
 
