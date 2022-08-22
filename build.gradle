@@ -17,6 +17,7 @@ repositories {
 }
 
 android {
+    namespace = 'com.mishkov.kiss_fft_jni'
     compileSdkVersion 33
     defaultConfig {
         minSdkVersion 16
