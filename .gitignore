@@ -8,3 +8,6 @@ local.properties
 
 # VSCode files
 .vscode/
+
+# Ignore Gradle build output directory
+build
