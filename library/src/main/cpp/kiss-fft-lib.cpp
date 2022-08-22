@@ -8,7 +8,7 @@ extern "C" {
 #define TAG "KISSFFT"
 
 JNIEXPORT jdoubleArray
-Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofft(JNIEnv *env, jobject,
+Java_com_mishkov_kiss_1fft_1jni_KISSFastFourierTransformer_dofft(JNIEnv *env, jobject,
                                                                 jdoubleArray inArray,
                                                                 jint is_inverse) {
 
@@ -43,7 +43,7 @@ Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofft(JNIEnv *env, job
 
 
 JNIEXPORT jobjectArray
-Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofftdouble(JNIEnv *env, jobject,
+Java_com_mishkov_kiss_1fft_1jni_KISSFastFourierTransformer_dofftdouble(JNIEnv *env, jobject,
                                                                       jdoubleArray data,
                                                                       jint is_inverse) {
 
@@ -96,7 +96,7 @@ Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofftdouble(JNIEnv *en
 
 
 JNIEXPORT jobjectArray
-Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofftr(JNIEnv *env, jobject,
+Java_com_mishkov_kiss_1fft_1jni_KISSFastFourierTransformer_dofftr(JNIEnv *env, jobject,
                                                                  jdoubleArray data) {
 
     jclass complex = env->FindClass("org/apache/commons/math3/complex/Complex");
@@ -144,7 +144,7 @@ Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofftr(JNIEnv *env, jo
 
 
 JNIEXPORT jdoubleArray
-Java_uk_me_berndporr_kiss_1fft_KISSFastFourierTransformer_dofftri(JNIEnv *env, jobject,
+Java_com_mishkov_kiss_1fft_1jni_KISSFastFourierTransformer_dofftri(JNIEnv *env, jobject,
                                                                   jobjectArray data) {
 
     jclass complex = env->FindClass("org/apache/commons/math3/complex/Complex");
