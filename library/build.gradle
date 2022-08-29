@@ -9,6 +9,8 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
+        consumerProguardFiles 'proguard-rules.pro'
+
         minSdkVersion 16
         targetSdkVersion 33
         versionCode 1
